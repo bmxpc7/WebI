@@ -1,0 +1,18 @@
+body{
+background-image: url(../Images/016.jpg);
+background-size: 100%;
+/*background-repeat: no-repeat;*/
+/*background-size: cover;*/		
+}
+form , table {
+	background-color: rgba(0,0,0,.3);
+	font-family: arial;
+	font-size: 12;
+	font-weight: bold;
+	color: white;
+	
+}
+
+#txtNombre, #txtUsuario,#txtApellidos,#dteFechaNac,#txtCalle,#txtNumero, #txtColonia, #cboEstado, #txtCP, #txtContraseniaConfirm, #txtContrasenia {
+	border-radius: 5%; 
+}

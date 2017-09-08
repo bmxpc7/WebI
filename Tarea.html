@@ -1,0 +1,151 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/estilos.css">
+	<style>
+		
+	</style>
+</head>
+<body>
+		
+	<form action="">
+		<h2>Registro de usuario</h2>
+		<table>
+			<tr>
+			<td align="right"><label for="txtNombre">* Nombre:</label></td>
+			<td><input type="text" id="txtNombre" maxlength="50" placeholder="Nombre" required></td>
+			<td rowspan="6">
+			<fieldset>
+				<legend>Datos de autenticación</legend>
+				<table>
+					<tr>
+						<td align="right">
+							<label for="txtUsuario">* Usuario:</label>
+						</td>
+						<td>
+							<input type="text" id="txtUsuario" maxlength="30" required>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							<label for="txtContrasenia">* Contraseña:</label>
+						</td>
+						<td>
+							<input type="text" id="txtContrasenia" maxlength="30" required>
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+						<label for="txtContrasenia">* Confirmar contraseña:</label>
+						</td>
+						<td><input type="text" id="txtContraseniaConfirm" maxlength="30" required></td>
+					</tr>
+				</table>
+				</fieldset>
+			</td>
+			</tr>
+			<tr>
+				<td align="right"><label for="txtApellidos">* Apellidos:</label></td>
+				<td><input type="text" id="txtApellidos" maxlength="50" required></td>
+			</tr>
+			<tr>
+				<td align="right"><label for="dteFechaNac">* Fecha nacimiento:</label></td>
+				<td><input type="date" id="dteFechaNac" required></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset>
+						<legend>Dirección</legend>
+						<table >
+						<tr>
+							<td align="right">
+								<label for="txtCalle">* Calle:</label>
+							</td>
+							<td>
+								<input type="text" id="txtCalle" maxlength="30" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<label for="txtNumero">* Número:</label>
+							</td>
+							<td>
+								<input type="text" id="txtNumero" maxlength="7" required title="Si no se cuenta con un número, coloque S/N">
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<label for="txtColonia">* Colonia:</label>
+							</td>
+							<td>
+								<input type="text" id="txtColonia" maxlength="30" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<label for="cboEstado">* Estado:</label>
+							</td>
+							<td>
+								<select id="cboEstado">
+									<option>Aguascalientes</option>
+									<option selected>Guanajuato</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								<label for="txtCP">* CP:</label>
+							</td>
+							<td>
+								<input type="number" min="1" max="99999" id="txtCP" required>
+							</td>
+						</tr>
+						</table>
+					</fieldset>
+				</td>
+				
+			</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset>
+						<legend>Estado civil</legend>
+						<label>
+							<input type="radio" name="edo_civil" value="Soltero" checked> Soltero(a)
+						</label>
+						<label>
+							<input type="radio" name="edo_civil" value="Casado"> Casado(a)
+						</label>
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset>
+						<legend>Sexo</legend>
+						<label>
+							<input type="radio" name="sexo" value="Hombre" checked> Hombre
+						</label>
+						<label>
+							<input type="radio" name="sexo" value="Mujer"> Mujer
+						</label>
+					</fieldset>
+				</td>
+
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label>
+						<input type="checkbox" value="Acepto"> Acepto los términos y condiciones
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">
+					<button type="submit"><img height="24" src="Images/ok.png"> Aceptar</button>
+					<button type="reset"><img height="24" src="Images/cancel.png"> Limpiar</button>
+				</td>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
